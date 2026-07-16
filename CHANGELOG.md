@@ -1,9 +1,15 @@
 # Change Log
 
-## Next Version
+## 2.46.0
+
+### Added
+- Added support for Swift package `traits` on remote and local package references, so generated projects preserve the configured trait selections #1629 @philprime
 
 ### Changed
-- Targets in the generated project now follow the declaration order from the source spec (Xcode sidebar, `xcodebuild -list` output). Previously they were always sorted alphabetically. Applies to both YAML and JSON specs. Declaration order is now also preserved for targets whose `platform`/`name` come from a target template and for targets whose key is a `${VARIABLE}`. @mirkokg
+- Targets in the generated project now follow the declaration order from the source spec (Xcode sidebar, `xcodebuild -list` output). Previously they were always sorted alphabetically. Applies to both YAML and JSON specs. Declaration order is now also preserved for targets whose `platform`/`name` come from a target template and for targets whose key is a `${VARIABLE}`. #1619 @mirkokg
+
+### Internal
+- Update to XcodeProj 9.14.0 #1629 @philprime
 
 ## 2.45.4
 
